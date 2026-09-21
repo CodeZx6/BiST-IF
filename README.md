@@ -1,5 +1,13 @@
 # Enhancing Origin–Destination Flow Prediction via Bi-Directional Spatio-Temporal Inference and Interconnected Feature Evolution
 
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.eswa.2024.125679-blue)](https://doi.org/10.1016/j.eswa.2024.125679)
+[![Project page](https://img.shields.io/badge/project-page-blue)](https://codezx6.github.io/papers/bist-if.html)
+
+Official implementation of **BiST-IF** — *Enhancing origin–destination flow prediction via bi-directional spatio-temporal inference and interconnected feature evolution* (Expert Systems with Applications 2025). BiST-IF predicts metro and taxi origin-destination flows by correcting delayed OD matrices, applying bi-directional origin/destination attention, and letting OD and arrival (Out-OD) flows evolve jointly through mutual-information attention.
+
+📄 Paper: https://doi.org/10.1016/j.eswa.2024.125679 · 🌐 Project page with abstract, FAQ and BibTeX: https://codezx6.github.io/papers/bist-if.html · 👤 Author: [Xu Zhang](https://codezx6.github.io)
+
+
 A deep learning framework for origin–destination (OD) flow prediction that explicitly models flow delay, bi-directional spatio-temporal dependencies, and mutual information between OD and Out-OD flows.
 
 ---
@@ -56,14 +64,16 @@ BiST-IF is evaluated on two real-world datasets:
 If you use this work, please cite:
 
 ```bibtex
-@article{yu2025enhancing,
-  title={Enhancing origin--destination flow prediction via bi-directional spatio-temporal inference and interconnected feature evolution},
-  author={Yu, Piao and Zhang, Xu and Gong, Yongshun and Zhang, Jian and Sun, Haoliang and Zhang, Junjie and Zhang, Xinxin and Yin, Yilong},
-  journal={Expert Systems with Applications},
-  volume={264},
-  pages={125679},
-  year={2025},
-  publisher={Elsevier}
+@article{yu2025bistif,
+  title        = {Enhancing origin–destination flow prediction via bi-directional spatio-temporal inference and interconnected feature evolution},
+  author       = {Yu, Piao and Zhang, Xu and Gong, Yongshun and Zhang, Jian and Sun, Haoliang and Zhang, Junjie and Zhang, Xinxin and Yin, Yilong},
+  journal      = {Expert Systems with Applications},
+  year         = {2025},
+  volume       = {264},
+  pages        = {125679},
+  doi          = {10.1016/j.eswa.2024.125679},
+  issn         = {0957-4174},
+  url          = {https://doi.org/10.1016/j.eswa.2024.125679}
 }
 ```
 
