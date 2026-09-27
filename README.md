@@ -1,11 +1,13 @@
 # Enhancing Origin–Destination Flow Prediction via Bi-Directional Spatio-Temporal Inference and Interconnected Feature Evolution
 
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.eswa.2024.125679-blue)](https://doi.org/10.1016/j.eswa.2024.125679)
-[![Project page](https://img.shields.io/badge/project-page-blue)](https://codezx6.github.io/papers/bist-if.html)
+[![Paper page](https://img.shields.io/badge/paper-page-blue)](https://codezx6.github.io/papers/bist-if.html)
 
-Official implementation of **BiST-IF** — *Enhancing origin–destination flow prediction via bi-directional spatio-temporal inference and interconnected feature evolution* (Expert Systems with Applications 2025). BiST-IF predicts metro and taxi origin-destination flows by correcting delayed OD matrices, applying bi-directional origin/destination attention, and letting OD and arrival (Out-OD) flows evolve jointly through mutual-information attention.
+Official implementation of **BiST-IF** (Expert Systems with Applications 2025): *Enhancing origin–destination flow prediction via bi-directional spatio-temporal inference and interconnected feature evolution*.
 
-📄 Paper: https://doi.org/10.1016/j.eswa.2024.125679 · 🌐 Project page with abstract, FAQ and BibTeX: https://codezx6.github.io/papers/bist-if.html · 👤 Author: [Xu Zhang](https://codezx6.github.io)
+BiST-IF predicts origin–destination (OD) flows between metro stations or urban areas by correcting delayed recent OD matrices, applying bi-directional origin/destination attention, and fusing arrival-side (Out-OD) flows through an attention-based mutual information mechanism. It lowers MAE by an average of 7.55% on HZMetro relative to the best baseline.
+
+📄 Paper: https://doi.org/10.1016/j.eswa.2024.125679 · 🌐 Paper page with quoted results, FAQ and BibTeX: https://codezx6.github.io/papers/bist-if.html
 
 
 A deep learning framework for origin–destination (OD) flow prediction that explicitly models flow delay, bi-directional spatio-temporal dependencies, and mutual information between OD and Out-OD flows.
@@ -15,7 +17,7 @@ A deep learning framework for origin–destination (OD) flow prediction that exp
 ## Overview
 
 **BiST-IF** is a spatio-temporal OD flow prediction model for intelligent transportation systems.
-Unlike conventional OD prediction methods that rely solely on departure-based OD matrices, BiST-IF jointly models **OD flow** and **Out-OD flow** to correct delayed data, capture periodic patterns, and enhance destination-aware inference.
+Unlike conventional OD prediction methods that rely solely on departure-based OD matrices, BiST-IF jointly models **OD flow** and **Out-OD flow** to correct delayed data, capture periodic patterns, and supplement the arrival information missing from OD flow.
 
 The model decomposes OD prediction into **periodic patterns (weekly, daily)** and **short-term fluctuations**, integrating them through bi-directional attention and interconnected feature evolution.
 
@@ -31,7 +33,7 @@ BiST-IF consists of three main modules:
 
 2. **OD Bi-directional Attention (ODBA)**
     - BiLSTM-based OD flow trend extraction
-    - Origin-wise and destination-wise attention computation
+    - A single attention map computed between origin and destination flow features
     - Spatio-temporal feature extraction with convolutional layers
 
 3. **Mutual Information Flow Evolution (MFE)**

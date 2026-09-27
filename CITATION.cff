@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: If you use this code, please cite the paper in preferred-citation.
+type: software
+title: 'BiST-IF: code for "Enhancing origin–destination flow prediction via bi-directional spatio-temporal inference and interconnected
+  feature evolution"'
+authors:
+- family-names: Yu
+  given-names: Piao
+- family-names: Zhang
+  given-names: Xu
+- family-names: Gong
+  given-names: Yongshun
+- family-names: Zhang
+  given-names: Jian
+- family-names: Sun
+  given-names: Haoliang
+- family-names: Zhang
+  given-names: Junjie
+- family-names: Zhang
+  given-names: Xinxin
+- family-names: Yin
+  given-names: Yilong
+repository-code: https://github.com/CodeZx6/BiST-IF
+url: https://codezx6.github.io/papers/bist-if.html
+abstract: BiST-IF predicts origin–destination (OD) flows between metro stations or urban areas by correcting delayed recent
+  OD matrices, applying bi-directional origin/destination attention, and fusing arrival-side (Out-OD) flows through an attention-based
+  mutual information mechanism. It lowers MAE by an average of 7.55% on HZMetro relative to the best baseline.
+keywords:
+- Origin–destination flow prediction
+- Spatio-temporal data
+- Bi-directional attention mechanism
+- Traffic prediction
+- Intelligent transport systems
+- OD delay correction
+- Out-OD flow
+- Mutual information mechanism
+preferred-citation:
+  type: article
+  title: Enhancing origin–destination flow prediction via bi-directional spatio-temporal inference and interconnected feature
+    evolution
+  authors:
+  - family-names: Yu
+    given-names: Piao
+  - family-names: Zhang
+    given-names: Xu
+  - family-names: Gong
+    given-names: Yongshun
+  - family-names: Zhang
+    given-names: Jian
+  - family-names: Sun
+    given-names: Haoliang
+  - family-names: Zhang
+    given-names: Junjie
+  - family-names: Zhang
+    given-names: Xinxin
+  - family-names: Yin
+    given-names: Yilong
+  year: 2025
+  doi: 10.1016/j.eswa.2024.125679
+  url: https://doi.org/10.1016/j.eswa.2024.125679
+  journal: Expert Systems with Applications
+  volume: '264'
+  start: '125679'
